@@ -9,7 +9,7 @@
 // }
 
 import React, { Component } from 'react';
-
+//osama
 class Linkcards extends Component {
     render(){
         return (
