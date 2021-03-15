@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Button1 from './Components/Buttons-4.1/Buttons-4.1';
+import Cards from './Components/Cards-4.2/card'
+import faker from 'faker'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+      {/* <Button1 newbtn="Important" stylebtn='bold'/>
+      <Button1 newbtn="Not Important"/> */}
+      <Cards linktext1="SHARE" linktext2="EXPLORE"/>
+      <Cards linktext1="SHARE" linktext2="EXPLORE"/>
+      <Cards linktext1="SHARE" linktext2="EXPLORE"/>
+
+      
     </div>
   );
 }
