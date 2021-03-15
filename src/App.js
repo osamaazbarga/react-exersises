@@ -4,6 +4,8 @@ import Button1 from './Components/Buttons-4.1/Buttons-4.1';
 import Cards from './Components/Cards-4.2/card'
 import Increment from './Components/Increment-7.1/Button'
 
+import Hide from './Components/Hide_And_Seek-7.2/HideAndSeek' 
+
 import faker from 'faker'
 
 
@@ -17,7 +19,9 @@ function App() {
       <Cards linktext1="SHARE" linktext2="EXPLORE"/>
       <Cards linktext1="SHARE" linktext2="EXPLORE"/> */}
 
-      <Increment/>
+      {/* <Increment/> */}
+
+      <Hide/>
 
       
     </div>

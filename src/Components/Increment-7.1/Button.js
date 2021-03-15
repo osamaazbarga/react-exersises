@@ -14,11 +14,11 @@ class Countbtn extends Component{
     render(){
         return (
     
-            <div>
+           <div>
                 <button onClick={this.buttonClicked}>
-                {
-                    'increment'
-                }
+                
+                    increment
+                
             </button>
             {this.state.count}
             </div>
