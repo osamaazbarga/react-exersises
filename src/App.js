@@ -6,6 +6,7 @@ import Increment from './Components/Increment-7.1/Button'
 
 import Hide from './Components/Hide_And_Seek-7.2/HideAndSeek' 
 import Color from './Components/LifeCycle-8.1/Color'
+import ChangeBox from './Components/LifeCycle-8.2/ChangingBox'
 import faker from 'faker'
 
 
@@ -23,7 +24,10 @@ function App() {
       <Increment/> */}
 
       {/* <Hide/> */}
-      <Color/>
+      {/* <Color/> */}
+      <ChangeBox size="50px" top="10px"/>
+        <ChangeBox size="100px" top="70px"/>
+        <ChangeBox size="30px" top="150px"/>
 
       
     </div>
