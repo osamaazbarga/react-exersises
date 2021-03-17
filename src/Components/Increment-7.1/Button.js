@@ -4,11 +4,9 @@ class Countbtn extends Component{
     constructor(){
         super();
         this.state={count:0}
-        this.buttonClicked = this.buttonClicked.bind(this);
     }
     
-
-    buttonClicked(e) {
+    buttonClicked=()=>{
         this.setState({count: this.state.count+1});
     }
     render(){

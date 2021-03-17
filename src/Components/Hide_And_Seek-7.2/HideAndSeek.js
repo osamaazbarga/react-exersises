@@ -5,10 +5,10 @@ class Hide extends Component{
     constructor(){
         super();
         this.state={hide:'none'}
-        this.buttonClicked = this.buttonClicked.bind(this);
     }
 
-    buttonClicked(e) {
+
+    buttonClicked=()=>{
         if(this.state.hide=='none'){
             this.setState({hide: this.state.hide='block'});
         }
@@ -16,7 +16,7 @@ class Hide extends Component{
             this.setState({hide: this.state.hide='none'});
         }
     }
-
+    
     render(){
         const mystyle={
             background:"yellow",
