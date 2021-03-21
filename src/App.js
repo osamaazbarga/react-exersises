@@ -9,8 +9,12 @@ import Color from './Components/LifeCycle-8.1/Color'
 import ChangeBox from './Components/LifeCycle-8.2/ChangingBox'
 import BoxToCircle from './Components/LifeCycle-8.3/BoxToCircle'
 import Spinner from './Components/Spinner-9.1/Spinner'
+import Parent from './Components/ChildToParent-11.1/Parent'
+import ChunkNorris from './Components/ChunkNorris-12.1/Chuck_norris'
+
 
 import faker from 'faker'
+import Data_massiaging from './Components/Data_massaging-13.1/Data_massiaging';
 
 
 function App() {
@@ -36,9 +40,11 @@ function App() {
 
       {/* <BoxToCircle/> */}
 
-      <Spinner/>
+      {/* <Spinner/> */}
 
-      
+      {/* <Parent/> */}
+      {/* <ChunkNorris/> */}
+      <Data_massiaging/>
     </div>
   );
 }
