@@ -1,0 +1,17 @@
+.avatarcard{
+    width: 400px;
+    border: 1px solid black;
+    display: inline-block;
+
+}
+img{
+    width: 100%;
+}
+
+.search{
+    text-align: center;
+    margin: 0 auto;
+}
+.searchinput{
+    display: block;
+}

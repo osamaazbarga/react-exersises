@@ -15,6 +15,7 @@ import ChunkNorris from './Components/ChunkNorris-12.1/Chuck_norris'
 
 import faker from 'faker'
 import Data_massiaging from './Components/Data_massaging-13.1/Data_massiaging';
+import Avatar from './Components/Avatar-13.1/Avatar';
 
 
 function App() {
@@ -44,7 +45,8 @@ function App() {
 
       {/* <Parent/> */}
       {/* <ChunkNorris/> */}
-      <Data_massiaging/>
+      {/* <Data_massiaging/> */}
+      <Avatar/>
     </div>
   );
 }
