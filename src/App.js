@@ -17,6 +17,9 @@ import faker from 'faker'
 import Data_massiaging from './Components/Data_massaging-13.1/Data_massiaging';
 import Avatar from './Components/Avatar-13.1/Avatar';
 import Form from './Components/Form-13.3/Form';
+import Focus from './Components/Focus-14.1/Focus';
+import Copy from './Components/Copy-14.2/Copy';
+import Home from './Components/Products-16.1/Home';
 
 
 function App() {
@@ -47,9 +50,12 @@ function App() {
       {/* <Parent/> */}
       {/* <ChunkNorris/> */}
       {/* <Data_massiaging/> */}
-      <Avatar/>
+      {/* <Avatar/> */}
 
-      <Form/>
+      {/* <Form/> */}
+      {/* <Focus/> */}
+      {/* <Copy/> */}
+      <Home/>
     </div>
   );
 }
