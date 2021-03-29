@@ -13,13 +13,36 @@ import Parent from './Components/ChildToParent-11.1/Parent'
 import ChunkNorris from './Components/ChunkNorris-12.1/Chuck_norris'
 
 
-import faker from 'faker'
+import faker, { lorem } from 'faker'
 import Data_massiaging from './Components/Data_massaging-13.1/Data_massiaging';
 import Avatar from './Components/Avatar-13.1/Avatar';
 import Form from './Components/Form-13.3/Form';
 import Focus from './Components/Focus-14.1/Focus';
 import Copy from './Components/Copy-14.2/Copy';
 import Home from './Components/Products-16.1/Home';
+import Hooks from './Components/Hooks/Hooks';
+import Search from './Components/Hooks/Search';
+import Text from './Components/Text-18.1/Text';
+
+const items=[{
+  title:'fdgdfgdgd',
+  content:'gdggdgd'
+},
+{
+  title:'osama',
+  content:'gdggdgd'
+},
+{
+  title:'fdgdfgrrrrdgd',
+  content:'gdggfdfddgd'
+},]
+
+const mytext=[{
+  text:'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for  will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).',
+  maximum:10
+},
+
+]
 
 
 function App() {
@@ -55,7 +78,11 @@ function App() {
       {/* <Form/> */}
       {/* <Focus/> */}
       {/* <Copy/> */}
-      <Home/>
+      {/* <Home/> */}
+      {/* <Hooks items={items}/> */}
+      {/* <Search /> */}
+
+      <Text text={mytext}/>
     </div>
   );
 }
