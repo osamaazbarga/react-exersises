@@ -23,6 +23,7 @@ import Home from './Components/Products-16.1/Home';
 import Hooks from './Components/Hooks/Hooks';
 import Search from './Components/Hooks/Search';
 import Text from './Components/Text-18.1/Text';
+import Todo from './Components/Simpletodo-18.2/Todo';
 
 const items=[{
   title:'fdgdfgdgd',
@@ -82,7 +83,8 @@ function App() {
       {/* <Hooks items={items}/> */}
       {/* <Search /> */}
 
-      <Text text={mytext}/>
+      {/* <Text text={mytext}/> */}
+      <Todo/>
     </div>
   );
 }
