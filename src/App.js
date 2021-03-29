@@ -24,6 +24,7 @@ import Hooks from './Components/Hooks/Hooks';
 import Search from './Components/Hooks/Search';
 import Text from './Components/Text-18.1/Text';
 import Todo from './Components/Simpletodo-18.2/Todo';
+import Whatthetime from './Components/WhatTheTime-18.3/Whatthetime';
 
 const items=[{
   title:'fdgdfgdgd',
@@ -84,7 +85,8 @@ function App() {
       {/* <Search /> */}
 
       {/* <Text text={mytext}/> */}
-      <Todo/>
+      {/* <Todo/> */}
+      <Whatthetime/>
     </div>
   );
 }
