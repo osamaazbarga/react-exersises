@@ -29,6 +29,7 @@ import Marking from './Components/Marking_And_Deleting-18.4/Markinganddeleting';
 import Footballfetch from './Components/Test1/Footballfetch';
 import Countries from './Components/Countries-19.2/Countries';
 import SimpleFetch from './Components/Simple_fetch/SimpleFetch';
+import Algolia from './Components/Algolia-19.3/Algolia';
 
 const items=[{
   title:'fdgdfgdgd',
@@ -96,7 +97,8 @@ function App() {
       {/* <Marking/> */}
       {/* <Footballfetch/> */}
       {/* <Countries/> */}
-      <SimpleFetch/>
+      {/* <SimpleFetch/> */}
+      <Algolia/>
     </div>
   );
 }

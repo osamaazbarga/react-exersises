@@ -3,25 +3,19 @@ import react, { useEffect, useState } from 'react'
 
 const Countries =()=>{
     const [countries,setCountries]=useState([]);
-    // const [filtercountries,setfilterCountries]=useState("");
-
     const [search,setSearch]=useState('');
     const getCountries=async()=>{
         const req= await axios.get('https://restcountries.eu/rest/v2/all');
         console.log(req.data);
-        setCountries(req.data)
-        // setfilterCountries(req.data)
+        setCountries(req.data);
     }
 
     useEffect(()=>{
-        getCountries();
+        Getc();
     },[])
 
     const textHandler=(e)=>{
         setSearch(e.target.value);
-        // setCountries(countries.filter((c)=>{
-        //     return c.name.toLowerCase().startsWith(e.target.value)
-        // }))
     }
 
     const Getc=()=>{
