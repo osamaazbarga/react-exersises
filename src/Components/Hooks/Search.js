@@ -1,6 +1,43 @@
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useState,useEffect } from 'react';
+
 const Search=()=>{
     const [term , setTerm]=useState('')
+    const [results,setResults]=useState([]);
+    console.log(results)
+
+    useEffect(async()=>{
+        const search = async () =>{
+            const data=await axios.get('https://en.wikipedia.org/w/api.php',{
+                params:{
+                    action:'query',
+                    list:'search',
+                    origin:'*',
+                    format:'json',
+                    srsearch:term,
+                }
+            });
+            setResults(data.data.query.search);
+        };
+        if(term){
+            search();
+        }
+        
+    },[term])
+
+    const renderResults=results.map(results=>{
+        return (
+            <div key={results.pageid} className="item">
+                <div className="content">
+                    <div className="header">
+                        {results.title}
+                    </div>
+                    <span dangerouslySetInnerHTML={{__html:results.snippet}}></span>
+                   
+                </div>
+            </div>
+        )
+    })
     return (
         <div>
             <div className="ui form">
@@ -13,6 +50,9 @@ const Search=()=>{
                     className="input"
                     />
                 </div>
+            </div>
+            <div className="ui celled list">
+                {renderResults}
             </div>
         </div>
     )
