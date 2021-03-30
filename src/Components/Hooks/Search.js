@@ -28,6 +28,12 @@ const Search=()=>{
     const renderResults=results.map(results=>{
         return (
             <div key={results.pageid} className="item">
+                <div className="right floated content">
+                    <a 
+                    className="ui button"
+                    href={`https://en.wikipedia.org?curid=${results.pageid}`}
+                    >Click Me</a>
+                </div>
                 <div className="content">
                     <div className="header">
                         {results.title}

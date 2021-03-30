@@ -28,6 +28,7 @@ import Whatthetime from './Components/WhatTheTime-18.3/Whatthetime';
 import Marking from './Components/Marking_And_Deleting-18.4/Markinganddeleting';
 import Footballfetch from './Components/Test1/Footballfetch';
 import Countries from './Components/Countries-19.2/Countries';
+import SimpleFetch from './Components/Simple_fetch/SimpleFetch';
 
 const items=[{
   title:'fdgdfgdgd',
@@ -87,13 +88,15 @@ function App() {
       {/* <Hooks items={items}/> */}
       {/* <Search /> */}
 
+
       {/* <Text text={mytext}/> */}
       {/* <Todo/> */}
       {/* <Whatthetime/> */}
 
       {/* <Marking/> */}
       {/* <Footballfetch/> */}
-      <Countries/>
+      {/* <Countries/> */}
+      <SimpleFetch/>
     </div>
   );
 }
