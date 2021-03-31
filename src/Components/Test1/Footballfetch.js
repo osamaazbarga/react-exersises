@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class Footballfetch extends Component {
 
     myapi=()=>{
-        fetch("https://api-football-v1.p.rapidapi.com/v2/leagues/country/england/2018", {
+        fetch("https://api-football-v1.p.rapidapi.com/v2/fixtures/id/157508", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-key": "81771d39bdmsh7d0670267a84583p193209jsncc2cf17b359b",

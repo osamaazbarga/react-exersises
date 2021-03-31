@@ -30,6 +30,7 @@ import Footballfetch from './Components/Test1/Footballfetch';
 import Countries from './Components/Countries-19.2/Countries';
 import SimpleFetch from './Components/Simple_fetch/SimpleFetch';
 import Algolia from './Components/Algolia-19.3/Algolia';
+import Cancelreq from './Components/Cancel_request-20.1/Canccelreq';
 
 const items=[{
   title:'fdgdfgdgd',
@@ -98,7 +99,8 @@ function App() {
       {/* <Footballfetch/> */}
       {/* <Countries/> */}
       {/* <SimpleFetch/> */}
-      <Algolia/>
+      {/* <Algolia/> */}
+      <Cancelreq/>
     </div>
   );
 }
